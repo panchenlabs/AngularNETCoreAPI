@@ -1,0 +1,31 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+
+  <div class="form-froup row detail">
+    <label class="col-sm-3 col-form-label">Employee Name</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="employeeName" placeholder="Enter Employee Name">
+    </div>
+
+    <label class="col-sm-3 col-form-label">Department</label>
+    <div class="col-sm-9">
+      <select class="form-control" [(ngModel)]="department">
+        <option>--Select--</option>
+        <option *ngFor="let item of departmentList" [value]="item.departmentName">{{item.departmentName}}</option>
+      </select>
+    </div>
+
+    <label class="col-sm-3 col-form-label">Date of joining</label>
+    <div class="col-sm-9">
+      <input type="date" [ngModel]="dateOfJoining | date:'yyyy-MM-dd'" (ngModelChange)="dateOfJoining = $event">
+    </div>
+  </div>
+
+  <div class="ml-3 bd-highlight image">
+    <img *ngIf="photoFilePath" [src]="photoFilePath" alt="profile-img">
+    <input type="file" (change)="uploadPhoto($event)" class="mt-2">
+  </div>
+</div>
+
+<button (click)="addEmployee()" *ngIf="!employee.employeeId" class="btn btn-primary"> Add </button>
+
+<button (click)="updateEmployee()" *ngIf="employee.employeeId" class="btn btn-primary"> Update </button>

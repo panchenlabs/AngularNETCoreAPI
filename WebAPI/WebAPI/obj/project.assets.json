@@ -1,0 +1,729 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Microsoft.AspNetCore.JsonPatch/5.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "5.0.9",
+          "Newtonsoft.Json": "12.0.2",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "build/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Microsoft.OpenApi/1.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore/6.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "6.1.5",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.1.5",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.1.5"
+        },
+        "build": {
+          "build/Swashbuckle.AspNetCore.props": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/6.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.2.3"
+        },
+        "compile": {
+          "lib/net5.0/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/6.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "6.1.5"
+        },
+        "compile": {
+          "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/6.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.JsonPatch/5.0.9": {
+      "sha512": "Y898BNDwTNaLK9AV4sZfYUeVC0LtWP0VdcOd04txbpFpFv5BgYbiLumQkmecwX40+KnxsqxGSCcOB8buBeadtw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.jsonpatch/5.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "microsoft.aspnetcore.jsonpatch.5.0.9.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.9": {
+      "sha512": "tJ7i6BDf/y+iKc1fuS6SRwelcSvhHkfQ86RhHVpUol4LfcW3WnSSL+njPuT2KmJidfJ349/7+eb/pCERHYG0/A==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/5.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.5.0.9.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
+      ]
+    },
+    "Microsoft.Bcl/1.1.10": {
+      "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
+      "type": "package",
+      "path": "microsoft.bcl/1.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/Xamarin.iOS10/_._",
+        "lib/monoandroid/_._",
+        "lib/monotouch/_._",
+        "lib/net40/System.IO.dll",
+        "lib/net40/System.IO.xml",
+        "lib/net40/System.Runtime.dll",
+        "lib/net40/System.Runtime.xml",
+        "lib/net40/System.Threading.Tasks.dll",
+        "lib/net40/System.Threading.Tasks.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/_._",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8/System.IO.dll",
+        "lib/portable-net40+sl4+win8/System.IO.xml",
+        "lib/portable-net40+sl4+win8/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8/System.IO.dll",
+        "lib/portable-net40+win8/System.IO.xml",
+        "lib/portable-net40+win8/System.Runtime.dll",
+        "lib/portable-net40+win8/System.Runtime.xml",
+        "lib/portable-net40+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8/ensureRedirect.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/portable-net451+win81+wpa81/_._",
+        "lib/portable-net451+win81/_._",
+        "lib/portable-win81+wp81+wpa81/_._",
+        "lib/sl4-windowsphone71/System.IO.dll",
+        "lib/sl4-windowsphone71/System.IO.xml",
+        "lib/sl4-windowsphone71/System.Runtime.dll",
+        "lib/sl4-windowsphone71/System.Runtime.xml",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/ensureRedirect.xml",
+        "lib/sl4/System.IO.dll",
+        "lib/sl4/System.IO.xml",
+        "lib/sl4/System.Runtime.dll",
+        "lib/sl4/System.Runtime.xml",
+        "lib/sl4/System.Threading.Tasks.dll",
+        "lib/sl4/System.Threading.Tasks.xml",
+        "lib/sl5/System.IO.dll",
+        "lib/sl5/System.IO.xml",
+        "lib/sl5/System.Runtime.dll",
+        "lib/sl5/System.Runtime.xml",
+        "lib/sl5/System.Threading.Tasks.dll",
+        "lib/sl5/System.Threading.Tasks.xml",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/wpa81/_._",
+        "microsoft.bcl.1.1.10.nupkg.sha512",
+        "microsoft.bcl.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.Build/1.0.14": {
+      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
+      "type": "package",
+      "path": "microsoft.bcl.build/1.0.14",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "content/net40/_._",
+        "content/netcore45/_._",
+        "content/portable-net40+win8+sl4+wp71+wpa81/_._",
+        "content/sl4-windowsphone71/_._",
+        "content/sl4/_._",
+        "microsoft.bcl.build.1.0.14.nupkg.sha512",
+        "microsoft.bcl.build.nuspec",
+        "tools/Install.ps1",
+        "tools/Microsoft.Bcl.Build.Tasks.dll",
+        "tools/Microsoft.Bcl.Build.targets",
+        "tools/Uninstall.ps1"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+      "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
+      "type": "package",
+      "path": "microsoft.extensions.apidescription.server/3.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Extensions.ApiDescription.Server.props",
+        "build/Microsoft.Extensions.ApiDescription.Server.targets",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
+        "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+        "microsoft.extensions.apidescription.server.nuspec",
+        "tools/Newtonsoft.Json.dll",
+        "tools/dotnet-getdocument.deps.json",
+        "tools/dotnet-getdocument.dll",
+        "tools/dotnet-getdocument.runtimeconfig.json",
+        "tools/net461-x86/GetDocument.Insider.exe",
+        "tools/net461-x86/GetDocument.Insider.exe.config",
+        "tools/net461/GetDocument.Insider.exe",
+        "tools/net461/GetDocument.Insider.exe.config",
+        "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
+        "tools/netcoreapp2.1/GetDocument.Insider.dll",
+        "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
+      ]
+    },
+    "Microsoft.Net.Http/2.2.29": {
+      "sha512": "fc4CPEewJ30Xgal+fSq1lYIBt582A7eKlAL7O4HXiYAiTp2VTnA4osSvk7T2n8aS4xTCPVJusQk3yKLT0XSpkg==",
+      "type": "package",
+      "path": "microsoft.net.http/2.2.29",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.XML",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.xml",
+        "lib/monoandroid/System.Net.Http.Extensions.XML",
+        "lib/monoandroid/System.Net.Http.Extensions.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.xml",
+        "lib/monotouch/System.Net.Http.Extensions.XML",
+        "lib/monotouch/System.Net.Http.Extensions.dll",
+        "lib/monotouch/System.Net.Http.Primitives.dll",
+        "lib/monotouch/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.Extensions.XML",
+        "lib/net40/System.Net.Http.Extensions.dll",
+        "lib/net40/System.Net.Http.Primitives.dll",
+        "lib/net40/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/System.Net.Http.Extensions.XML",
+        "lib/net45/System.Net.Http.Extensions.dll",
+        "lib/net45/System.Net.Http.Primitives.dll",
+        "lib/net45/System.Net.Http.Primitives.xml",
+        "lib/net45/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8/ensureRedirect.xml",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.xml",
+        "lib/win8/System.Net.Http.Extensions.XML",
+        "lib/win8/System.Net.Http.Extensions.dll",
+        "lib/win8/System.Net.Http.Primitives.dll",
+        "lib/win8/System.Net.Http.Primitives.xml",
+        "lib/wpa81/System.Net.Http.Extensions.XML",
+        "lib/wpa81/System.Net.Http.Extensions.dll",
+        "lib/wpa81/System.Net.Http.Primitives.dll",
+        "lib/wpa81/System.Net.Http.Primitives.xml",
+        "microsoft.net.http.2.2.29.nupkg.sha512",
+        "microsoft.net.http.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.2.3": {
+      "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
+      "type": "package",
+      "path": "microsoft.openapi/1.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Microsoft.OpenApi.dll",
+        "lib/net46/Microsoft.OpenApi.pdb",
+        "lib/net46/Microsoft.OpenApi.xml",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.2.3.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "sha512": "QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.pdb",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.2.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore/6.1.5": {
+      "sha512": "AFiomCan3c3twBr3q/0P0YECN+AtJEKASjtRybbKlFyqSyENrwj8Q3JmPQ7knyp7Z2TzbhZ+ZccA3eXpGcD97g==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/6.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Swashbuckle.AspNetCore.props",
+        "swashbuckle.aspnetcore.6.1.5.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/6.1.5": {
+      "sha512": "Wp8FlwNCKR/DfxvEkjQdru0l7aUp4/5VLEvejCA8t/SMMcUTP+xw4zvyEjGCBoJ/ETqzQM3y+72iYaEOhBlYOw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/6.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/6.1.5": {
+      "sha512": "16M5iJN+hzykkH/vEm4V+47rh8r8KNCOSkIWvP9/+krH3hqVjMlhuop8Xzq6IXckmpXLwxoylLBpiSG9Yy2UUQ==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.6.1.5.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/6.1.5": {
+      "sha512": "/YwEGAdkDK8rEPSuPURNNgJ3mWmtsCI/xnVlWBaM2UDNVTr8wBUO0qhLvHFgrf6NjjjNq6cyO3M7lZMLXcGusw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.9",
+      "Microsoft.Net.Http >= 2.2.29",
+      "Swashbuckle.AspNetCore >= 6.1.5"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\cathy\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Projects\\AngularNETCoreAPI\\WebAPI\\WebAPI\\WebAPI.csproj",
+      "projectName": "WebAPI",
+      "projectPath": "D:\\Projects\\AngularNETCoreAPI\\WebAPI\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "C:\\Users\\cathy\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\AngularNETCoreAPI\\WebAPI\\WebAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\cathy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "target": "Package",
+            "version": "[5.0.9, )"
+          },
+          "Microsoft.Net.Http": {
+            "target": "Package",
+            "version": "[2.2.29, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[6.1.5, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Bcl 1.1.10' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Bcl",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Net.Http 2.2.29' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Net.Http",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

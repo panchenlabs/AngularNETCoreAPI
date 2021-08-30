@@ -1,0 +1,53 @@
+<!-- Button trigger modal -->
+<button class="btn btn-light float-right m-2" (click)="addClick(content)">Add Employee</button>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>
+        Employee Id
+      </th>
+      <th>
+        Employee Name
+      </th>
+      <th>
+        Department
+      </th>
+      <th>
+        Date of Joining
+      </th>
+      <th>
+        Options
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dataItem of employeeList">
+      <td>{{dataItem.employeeId}}</td>
+      <td>{{dataItem.employeeName}}</td>
+      <td>{{dataItem.department}}</td>
+      <td>{{dataItem.dateOfJoining | date}}</td>
+      <td>
+        <button class="btn btn-light mr-1" (click)="editClick(content, dataItem)">
+          <i class="bi-pencil-square"></i>
+        </button>
+        <button type="button" class="btn btn-light mr-1" (click)="deleteClick(dataItem)">
+          <i class="bi-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{modalTitle}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="closeClick()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-add-edit-emp [employee]="employee" (close)="closeClick()" *ngIf="activateAddEditEmployeeComponent">
+    </app-add-edit-emp>
+  </div>
+</ng-template>

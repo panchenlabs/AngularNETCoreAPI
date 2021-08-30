@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZUcZv6cHfl6cp+j8pjzWv6ntlKmCvys72kC3NZIxhOMY1PXx3+dZqp7eBYO9DOdz79fKWXfH8pxPmPJbItGOEA==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\AngularNETCoreAPI\\WebAPI\\WebAPI\\WebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cathy\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.9\\microsoft.aspnetcore.jsonpatch.5.0.9.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.9\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.9.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\microsoft.bcl\\1.1.10\\microsoft.bcl.1.1.10.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\microsoft.net.http\\2.2.29\\microsoft.net.http.2.2.29.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.5\\swashbuckle.aspnetcore.6.1.5.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.5\\swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.5\\swashbuckle.aspnetcore.swaggergen.6.1.5.nupkg.sha512",
+    "C:\\Users\\cathy\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.5\\swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Bcl 1.1.10' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Bcl",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Net.Http 2.2.29' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Net.Http",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
